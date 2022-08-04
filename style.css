@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Averta;
+  src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
+:root {
+  --primary: #514949;
+  --cards: #fffafa;
+  --links: #e7332b;
+  --hovlinks: #eb5850;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Averta, sans-serif;
+  color: var(--primary);
+}
+
+.hero-section {
+  background-image: url(./img/hero-bg.svg);
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-section img {
+  margin: 4rem 0 5rem 0;
+}
+
+.hero-section h2 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.hero-section p {
+  max-width: 54%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 7rem;
+  opacity: 0.9;
+}
+
+a {
+  color: var(--links);
+  text-decoration: none;
+}
+
+.btn a {
+  padding: 0.7rem 2rem;
+  border: 1px solid var(--links);
+  margin-left: 2rem;
+  transition: all 700ms;
+}
+
+.btn1 {
+  background-color: var(--links);
+  color: #fff;
+}
+
+.btn2 {
+  background-color: #fff;
+  color: var(--links);
+}
+
+.btn1:hover {
+  background-color: #fff;
+  color: var(--links);
+}
+.btn2:hover {
+  color: #fff;
+  background-color: var(--links);
+}
+
+.team {
+  text-align: center;
+  margin: 5rem auto;
+  padding: 3rem 1.7rem;
+  width: 50%;
+  background-color: #fff0f0;
+  border-radius: 8px;
+}
+
+.team,
+h3,
+p {
+  margin-bottom: 1.5rem;
+}
+
+.team h3 {
+  color: var(--links);
+  font-weight: 100;
+}
+
+.team p {
+  line-height: 2rem;
+  font-size: 1rem;
+  color: var(--primary);
+  word-spacing: 0.1rem;
+}
+
+.aims {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  margin-left: 3rem;
+  text-align: left;
+  border: 1px solid var(--links);
+  border-radius: 8px;
+  line-height: 2rem;
+  background-color: #fffafa;
+  padding: 61px 47px 82px 36px;
+}
+.card p {
+  margin-top: 3rem;
+}
+
+.links,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0f0;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+footer h2 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.links h2 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.socials img {
+  height: 1rem;
+  margin-left: 0.3rem;
+}
+.divider {
+  border: 1px;
+  border-style: dotted;
+  border-color: var(--hovlinks);
+  border-radius: 50%;
+  border-width: 25%;
+  margin: 5rem;
+}
+
+.team {
+  text-align: center;
+  margin: 5rem auto;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  body,
+  .team a {
+    font-size: 0.8rem;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .btn1 {
+    margin-bottom: 2rem;
+  }
+
+  .team {
+    margin-top: 8rem;
+  }
+
+  .link,
+  .socials,
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .aims,
+  .links,
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: 2rem auto;
+    font-size: 0.8rem;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+}
