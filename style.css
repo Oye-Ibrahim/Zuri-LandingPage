@@ -220,6 +220,8 @@ footer h2 {
 
   .card {
     margin-bottom: 2rem;
-    width: 70%;
+    width: 100%;
+    margin-right: 3rem;
+    height: auto;
   }
 }
