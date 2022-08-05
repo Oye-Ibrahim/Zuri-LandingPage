@@ -8,6 +8,8 @@
   --cards: #fffafa;
   --links: #e7332b;
   --hovlinks: #eb5850;
+  --bg-light: #fff;
+  --team-bg: #fff0f0;
 }
 
 * {
@@ -66,21 +68,25 @@ a {
 
 .btn1 {
   background-color: var(--links);
-  color: #fff;
+  color: var(--bg-light);
 }
 
 .btn2 {
-  background-color: #fff;
+  background-color: var(--bg-light);
   color: var(--links);
 }
 
 .btn1:hover {
-  background-color: #fff;
+  background-color: var(--bg-light);
   color: var(--links);
 }
 .btn2:hover {
-  color: #fff;
+  color: var(--bg-light);
   background-color: var(--links);
+}
+
+.middle {
+  margin-bottom: 5rem;
 }
 
 .team {
@@ -88,24 +94,24 @@ a {
   margin: 5rem auto;
   padding: 3rem 1.7rem;
   width: 50%;
-  background-color: #fff0f0;
+  background-color: var(--team-bg);
   border-radius: 8px;
 }
 
+.team h3 {
+  color: var(--links);
+  font-size: 1rem;
+  font-weight: lighter;
+}
 .team,
 h3,
 p {
   margin-bottom: 1.5rem;
 }
 
-.team h3 {
-  color: var(--links);
-  font-weight: 100;
-}
-
 .team p {
-  line-height: 2rem;
-  font-size: 1rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
   color: var(--primary);
   word-spacing: 0.1rem;
 }
@@ -121,9 +127,9 @@ p {
 .card {
   margin-left: 3rem;
   text-align: left;
-  border: 1px solid var(--links);
+  border: 1px dotted var(--links);
   border-radius: 8px;
-  line-height: 2rem;
+  line-height: 1.7rem;
   background-color: #fffafa;
   padding: 61px 47px 82px 36px;
 }
@@ -136,7 +142,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff0f0;
+  background-color: var(--team-bg);
   padding: 2rem;
   font-size: 1rem;
 }
@@ -165,16 +171,13 @@ footer h2 {
   margin: 5rem;
 }
 
-.team {
-  text-align: center;
-  margin: 5rem auto;
-  padding: 1rem;
-  font-size: 0.7rem;
-}
-
 @media (max-width: 768px) {
   body,
-  .team a {
+  .team h3 {
+    font-size: 0.8rem;
+  }
+
+  .team p {
     font-size: 0.8rem;
   }
   .btn {
@@ -190,6 +193,11 @@ footer h2 {
 
   .team {
     margin-top: 8rem;
+  }
+
+  .contact,
+  .link {
+    margin-top: 1rem;
   }
 
   .link,
